@@ -15,7 +15,7 @@ base[, tmp := ANO]
 base[, ANO := ANO_REF - 1]
 
 base <- adiciona_desc_desp(base)
-base <- add_criterios_desp(base)
+base <- add_criterios_desp_ldo(base)
 
 base[, ANO := tmp]
 base[, tmp := NULL]

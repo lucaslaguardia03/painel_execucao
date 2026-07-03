@@ -24,3 +24,10 @@ Antes de executar o projeto, você precisará ter os seguintes programas instala
 
 - [Git](https://git-scm.com/downloads)
 - [Git Large Files](https://git-lfs.com/)
+- [MakeFile](https://www.gnu.org/software/make/) 
+
+## Utilize o comando abaixo para fazer o munge dos dados do pacote execução quando ele for atualizado: 
+``` bash
+make build_histórico
+```
+

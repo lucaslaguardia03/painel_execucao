@@ -4,24 +4,24 @@ source("code/R/lib/demonstrativo_fiscal.R")
 
 #====================================================================
 # preparacao das bases
-base_anteriores <- execucao::exec_desp
+base <- execucao::exec_desp
 
 #====================================================================
 ## adiciona critérios nos anos anteriores -- não pode ser feita a junção antes, pois a adição artificial da coluna UO_FIN_COD atrapalharia na aplicação da função is_teto_propag
-base_anteriores$BASE <- "EXEC"
-base_anteriores <- add_criterios_desp(base_anteriores)
-base_anteriores$UO_FIN_COD <- 0
+base <- add_criterios_desp(base)
+base$UO_FIN_COD <- 0
 
 #====================================================================
 # Aplicação de critérios finais
-base <- adiciona_desc_desp(base_anteriores)
+base <- adiciona_desc_desp(base)
 
 #====================================================================
 # Adição de critérios de pessoal
 base <- add_evento(base, overwrite = TRUE)
-base <- add_uo_inativo(base)
+#base <- add_uo_inativo(base)
 
 #====================================================================
+
 # Ajustes finais
 base$VL <- base$VL_EMP
 
