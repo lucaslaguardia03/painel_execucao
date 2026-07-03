@@ -1,0 +1,136 @@
+﻿LOAD * INLINE [
+%_geral
+Ano
+Mês
+UO - Código
+UO - Sigla
+UO - Poder
+UO - Setor
+Fonte - Código
+Fonte - Descrição
+Fonte STN
+Categoria - Código 
+
+];
+
+
+
+LOAD * INLINE [
+%_receita
+Valor LOA da Receita
+Valor Efetivo Ajustado 
+Receita - Classificação
+Receita - Descrição
+
+];
+
+
+LOAD * INLINE [
+%_despesa
+UO Financeira - Código 
+UO Inativo - Código 
+UO Inativo - Sigla 
+Função - Código
+Função - Descrição
+Subfunção - Código
+Programa - Código
+Programa - Descrição
+Ação - Código
+Ação - Descrição
+Grupo - Código
+Grupo - Descrição
+Modalidade - Código
+Modalidade - Descrição
+Elemento - Código
+Elemento - Descrição
+Elemento Item - Código
+Elemento Item - Descrição
+Item - Código
+IAG - Código
+IPU - Código
+IPU - Descrição
+Crédito Adicional - Código
+Crédito Adicional - Descrição
+Valor Crédito Inicial
+Valor Suplementação
+Valor LOA da Despesa
+Valor Anulação
+Valor Empenhado
+Valor Liquidado
+Valor Pago Orçamentário
+Valor Pago Financeiro
+Valor Reestimado da Despesa
+Valor Crédito Autorizado Total
+Valor LDO da Despesa
+];
+
+
+LOAD * INLINE [
+%_orcamento_desp
+Fiscal nv.1 - Despesa
+Fiscal nv.2 - Despesa
+Fiscal nv.3 - Despesa
+TETO RRF
+Despesa - Teto Primário
+Despesa - Teto PROPAG
+Evento - Folha de Pessoal
+];
+
+LOAD * INLINE [
+%_orcamento_rec
+SEF
+RCL
+RCL Dívida
+RCL Pessoal
+Perda Fundeb 
+
+];
+
+LOAD * INLINE [
+%_orcamento_geral
+ASPS
+FAPEMIG
+MDE
+PREV
+Obrigatório
+Transitório
+Primário
+];
+
+
+LOAD * INLINE [
+%_despesa_filtros
+UO - Poder
+UO - Código
+UO - Sigla
+Função - Código
+Subfunção - Código
+Fonte - Código
+Programa - Código
+Ação - Código
+Grupo - Código
+Modalidade - Código
+Elemento - Código
+Elemento Item - Código
+Item - Código
+Crédito Adicional - Código
+IAG
+IPU
+];
+
+LOAD * INLINE [
+%_restosapagar
+Ano Origem - Restos a Pagar
+Valor Cancelado RPNP
+Valor Cancelado RPP Demais
+Valor Inscrito RPP Folha
+Valor Cancelado RPP Folha
+Valor OLP RPP Folha
+Valor Pago RPP Folha
+Valor Pago RPNP
+Valor Inscrito RPP Demais
+Valor OLP RPP Demais
+Valor Pago RPP Demais
+Valor Saldo RPNP
+
+];

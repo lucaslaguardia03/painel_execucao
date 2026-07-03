@@ -1,0 +1,8 @@
+QUALIFY *;
+
+metadados:
+LOAD *
+FROM
+data\metadados.csv
+(txt, utf8, embedded labels, delimiter is ';', msq);
+

@@ -1,0 +1,88 @@
+// ── Carrega os históricos em QVD ──────────────────────────────────
+
+IF FileSize('data-historico\loa_rec.csv') > 0 THEN
+loa_rec_hist:
+LOAD * FROM data-historico\loa_rec.csv (txt, utf8, embedded labels, delimiter is ';', msq);
+STORE loa_rec_hist INTO data-historico\loa_rec.qvd (qvd);
+DROP TABLE loa_rec_hist;
+END IF;
+
+IF FileSize('data-historico\loa_desp.csv') > 0 THEN
+loa_desp_hist:
+LOAD * FROM data-historico\loa_desp.csv (txt, utf8, embedded labels, delimiter is ';', msq);
+STORE loa_desp_hist INTO data-historico\loa_desp.qvd (qvd);
+DROP TABLE loa_desp_hist;
+END IF;
+
+IF FileSize('data-historico\ldo_rec.csv') > 0 THEN
+ldo_rec_hist:
+LOAD * FROM data-historico\ldo_rec.csv (txt, utf8, embedded labels, delimiter is ';', msq);
+STORE ldo_rec_hist INTO data-historico\ldo_rec.qvd (qvd);
+DROP TABLE ldo_rec_hist;
+END IF;
+
+IF FileSize('data-historico\ldo_desp.csv') > 0 THEN
+ldo_desp_hist:
+LOAD * FROM data-historico\ldo_desp.csv (txt, utf8, embedded labels, delimiter is ';', msq);
+STORE ldo_desp_hist INTO data-historico\ldo_desp.qvd (qvd);
+DROP TABLE ldo_desp_hist;
+END IF;
+
+IF FileSize('data-historico\exec_rec.csv') > 0 THEN
+exec_rec_hist:
+LOAD * FROM data-historico\exec_rec.csv (txt, utf8, embedded labels, delimiter is ';', msq);
+STORE exec_rec_hist INTO data-historico\exec_rec.qvd (qvd);
+DROP TABLE exec_rec_hist;
+END IF;
+
+IF FileSize('data-historico\exec_desp.csv') > 0 THEN
+exec_desp_hist:
+LOAD * FROM data-historico\exec_desp.csv (txt, utf8, embedded labels, delimiter is ';', msq);
+STORE exec_desp_hist INTO data-historico\exec_desp.qvd (qvd);
+DROP TABLE exec_desp_hist;
+END IF;
+
+IF FileSize('data-historico\exec_rp.csv') > 0 THEN
+exec_rp_hist:
+LOAD * FROM data-historico\exec_rp.csv (txt, utf8, embedded labels, delimiter is ';', msq);
+STORE exec_rp_hist INTO data-historico\exec_rp.qvd (qvd);
+DROP TABLE exec_rp_hist;
+END IF;
+
+IF FileSize('data-historico\exec_rp_folha.csv') > 0 THEN
+exec_rp_folha_hist:
+LOAD * FROM data-historico\exec_rp_folha.csv (txt, utf8, embedded labels, delimiter is ';', msq);
+STORE exec_rp_folha_hist INTO data-historico\exec_rp_folha.qvd (qvd);
+DROP TABLE exec_rp_folha_hist;
+END IF;
+
+IF FileSize('data-historico\exec_suplementacao.csv') > 0 THEN
+exec_suplementacao_hist:
+LOAD * FROM data-historico\exec_suplementacao.csv (txt, utf8, embedded labels, delimiter is ';', msq);
+STORE exec_suplementacao_hist INTO data-historico\exec_suplementacao.qvd (qvd);
+DROP TABLE exec_suplementacao_hist;
+END IF;
+
+IF FileSize('data-historico\exec_pago_orc.csv') > 0 THEN
+exec_pago_orc_hist:
+LOAD * FROM data-historico\exec_pago_orc.csv (txt, utf8, embedded labels, delimiter is ';', msq);
+STORE exec_pago_orc_hist INTO data-historico\exec_pago_orc.qvd (qvd);
+DROP TABLE exec_pago_orc_hist;
+END IF;
+
+// ── Concatena tudo ───────────────────────────────────────────────────────────
+LOAD * FROM data-historico\ldo_rec.qvd (qvd);
+CONCATENATE
+LOAD * FROM data-historico\ldo_desp.qvd (qvd);
+CONCATENATE
+LOAD * FROM data-historico\exec_rec.qvd (qvd);
+CONCATENATE
+LOAD * FROM data-historico\exec_desp.qvd (qvd);
+CONCATENATE
+LOAD * FROM data-historico\exec_rp.qvd (qvd);
+CONCATENATE
+LOAD * FROM data-historico\exec_rp_folha.qvd (qvd);
+CONCATENATE
+LOAD * FROM data-historico\exec_suplementacao.qvd (qvd);
+CONCATENATE
+LOAD * FROM data-historico\exec_pago_orc.qvd (qvd);
