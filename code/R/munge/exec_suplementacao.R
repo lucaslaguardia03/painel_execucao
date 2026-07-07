@@ -20,3 +20,5 @@ base[, VL_CRED_AUT := NULL]
 #====================================================================
 # exportacao dos dados
 write.csv2(base, "data-historico/exec_suplementacao.csv", row.names = FALSE, na="", fileEncoding = "UTF-8")
+
+
