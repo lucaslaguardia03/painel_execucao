@@ -18,6 +18,7 @@ base <- adiciona_desc_desp(base)
 #====================================================================
 # Adição de critérios de pessoal
 base <- add_evento(base, overwrite = TRUE)
+base <- add_uo_setor(base)
 #base <- add_uo_inativo(base)
 
 #====================================================================
@@ -31,14 +32,6 @@ base[, DATA_EXEC := paste(ANO, formatC(MES_COD, width = 2, flag = "0"), "01", se
 write.csv2(base, "data-historico/exec_desp.csv", row.names = FALSE, na="", fileEncoding = "UTF-8")
 
 
-# Cria base e coluna com os valores da despesa liquidada
-base$BASE <- "EXEC_LIQ"
-base$VL <- base$VL_LIQ
-base <- base[,c("VL_EMP", "VL_LIQ", "VL_PAGO_FIN") := NULL]
-
-#====================================================================
-# exportacao dos dados
-write.csv2(base, "data-historico/exec_desp_liq.csv", row.names = FALSE, na="", fileEncoding = "UTF-8")
 
 
 
