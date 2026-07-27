@@ -71,6 +71,10 @@ DROP TABLE exec_pago_orc_hist;
 END IF;
 
 // ── Concatena tudo ───────────────────────────────────────────────────────────
+LOAD * FROM data-historico\loa_rec.qvd (qvd);
+CONCATENATE
+LOAD * FROM data-historico\loa_desp.qvd (qvd);
+CONCATENATE
 LOAD * FROM data-historico\ldo_rec.qvd (qvd);
 CONCATENATE
 LOAD * FROM data-historico\ldo_desp.qvd (qvd);
@@ -86,3 +90,86 @@ CONCATENATE
 LOAD * FROM data-historico\exec_suplementacao.qvd (qvd);
 CONCATENATE
 LOAD * FROM data-historico\exec_pago_orc.qvd (qvd);
+
+
+
+// ── Carrega os dados de execução do ano corrente ──────────────────────────────────
+
+  LOAD *
+  FROM
+  data\exec_alem_credito.csv
+  
+  (txt, utf8, embedded labels, delimiter is ';', msq);
+
+CONCATENATE
+
+
+  LOAD *
+  FROM
+  data\exec_cota.csv
+  
+  (txt, utf8, embedded labels, delimiter is ';', msq);
+
+CONCATENATE
+
+
+  LOAD *
+  FROM
+  data\exec_cred_aut_desp.csv
+  
+  (txt, utf8, embedded labels, delimiter is ';', msq);
+
+CONCATENATE
+
+
+  LOAD *
+  FROM
+  data\exec_desp.csv
+  
+  (txt, utf8, embedded labels, delimiter is ';', msq);
+
+CONCATENATE
+
+
+  LOAD *
+  FROM
+  data\exec_pago_orc.csv
+  
+  (txt, utf8, embedded labels, delimiter is ';', msq);
+
+CONCATENATE
+
+
+  LOAD *
+  FROM
+  data\exec_rec.csv
+  
+  (txt, utf8, embedded labels, delimiter is ';', msq);
+
+CONCATENATE
+
+
+  LOAD *
+  FROM
+  data\exec_rp.csv
+  
+  (txt, utf8, embedded labels, delimiter is ';', msq);
+
+CONCATENATE
+
+
+  LOAD *
+  FROM
+  data\exec_rp_folha.csv
+  
+  (txt, utf8, embedded labels, delimiter is ';', msq);
+
+CONCATENATE
+
+
+  LOAD *
+  FROM
+  data\exec_suplementacao.csv
+  
+  (txt, utf8, embedded labels, delimiter is ';', msq);
+  

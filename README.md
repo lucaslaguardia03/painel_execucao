@@ -26,8 +26,17 @@ Antes de executar o projeto, você precisará ter os seguintes programas instala
 - [Git Large Files](https://git-lfs.com/)
 - [MakeFile](https://www.gnu.org/software/make/) 
 
-## Utilize o comando abaixo para fazer o munge dos dados do pacote execução quando ele for atualizado: 
+## Utilize o comando abaixo para fazer o munge dos dados do pacote execução (não contém os dados do ano corrente): 
 ``` bash
 make build_histórico
 ```
 
+## Utilize o comando abaixo para fazer o munge dos dados de execução do ano corrente: 
+``` bash
+make build_ano_corrente
+```
+
+## Utilize o comando abaixo para o munge histórico e do ano corrente: 
+``` bash
+make build
+```
