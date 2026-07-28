@@ -1,15 +1,15 @@
 LOAD * INLINE [
 %_geral
 Ano
-Mês
-UO - Código
+Mï¿½s
+UO - Cï¿½digo
 UO - Sigla
 UO - Poder
 UO - Setor
-Fonte - Código
-Fonte - Descrição
+Fonte - Cï¿½digo
+Fonte - Descriï¿½ï¿½o
 Fonte STN
-Categoria - Código
+Categoria - Cï¿½digo
 
 ];
 
@@ -19,47 +19,47 @@ LOAD * INLINE [
 %_receita
 Valor LOA da Receita
 Valor Efetivo Ajustado 
-Receita - Classificação
-Receita - Descrição
+Receita - Classificaï¿½ï¿½o
+Receita - Descriï¿½ï¿½o
 
 ];
 
 
 LOAD * INLINE [
 %_despesa
-UO Financeira - Código 
-UO Inativo - Código 
+UO Financeira - Cï¿½digo 
+UO Inativo - Cï¿½digo 
 UO Inativo - Sigla 
-Função - Código
-Função - Descrição
-Subfunção - Código
-Programa - Código
-Programa - Descrição
-Ação - Código
-Ação - Descrição
-Grupo - Código
-Grupo - Descrição
-Modalidade - Código
-Modalidade - Descrição
-Elemento - Código
-Elemento - Descrição
-Elemento Item - Código
-Elemento Item - Descrição
-Item - Código
-IAG - Código
-IPU - Código
-IPU - Descrição
-Crédito Adicional - Código
-Crédito Adicional - Descrição
-Valor Crédito Inicial
-Valor Suplementação
+Funï¿½ï¿½o - Cï¿½digo
+Funï¿½ï¿½o - Descriï¿½ï¿½o
+Subfunï¿½ï¿½o - Cï¿½digo
+Programa - Cï¿½digo
+Programa - Descriï¿½ï¿½o
+Aï¿½ï¿½o - Cï¿½digo
+Aï¿½ï¿½o - Descriï¿½ï¿½o
+Grupo - Cï¿½digo
+Grupo - Descriï¿½ï¿½o
+Modalidade - Cï¿½digo
+Modalidade - Descriï¿½ï¿½o
+Elemento - Cï¿½digo
+Elemento - Descriï¿½ï¿½o
+Elemento Item - Cï¿½digo
+Elemento Item - Descriï¿½ï¿½o
+Item - Cï¿½digo
+IAG - Cï¿½digo
+IPU - Cï¿½digo
+IPU - Descriï¿½ï¿½o
+Crï¿½dito Adicional - Cï¿½digo
+Crï¿½dito Adicional - Descriï¿½ï¿½o
+Valor Crï¿½dito Inicial
+Valor Suplementaï¿½ï¿½o
 Valor LOA da Despesa
-Valor Anulação
+Valor Anulaï¿½ï¿½o
 Valor Empenhado
 Valor Liquidado
-Valor Pago Orçamentário
+Valor Pago Orï¿½amentï¿½rio
 Valor Pago Financeiro
-Valor Crédito Autorizado Total
+Valor Crï¿½dito Autorizado Total
 Valor LDO da Despesa
 ];
 
@@ -70,7 +70,7 @@ Fiscal nv.1 - Despesa
 Fiscal nv.2 - Despesa
 Fiscal nv.3 - Despesa
 TETO RRF
-Despesa - Teto Primário
+Despesa - Teto Primï¿½rio
 Despesa - Teto PROPAG
 Evento - Folha de Pessoal
 ];
@@ -79,7 +79,7 @@ LOAD * INLINE [
 %_orcamento_rec
 SEF
 RCL
-RCL Dívida
+RCL Dï¿½vida
 RCL Pessoal
 Perda Fundeb 
 
@@ -91,28 +91,28 @@ ASPS
 FAPEMIG
 MDE
 PREV
-Obrigatório
-Transitório
-Primário
+Obrigatï¿½rio
+Transitï¿½rio
+Primï¿½rio
 ];
 
 
 LOAD * INLINE [
 %_despesa_filtros
 UO - Poder
-UO - Código
+UO - Cï¿½digo
 UO - Sigla
-Função - Código
-Subfunção - Código
-Fonte - Código
-Programa - Código
-Ação - Código
-Grupo - Código
-Modalidade - Código
-Elemento - Código
-Elemento Item - Código
-Item - Código
-Crédito Adicional - Código
+Funï¿½ï¿½o - Cï¿½digo
+Subfunï¿½ï¿½o - Cï¿½digo
+Fonte - Cï¿½digo
+Programa - Cï¿½digo
+Aï¿½ï¿½o - Cï¿½digo
+Grupo - Cï¿½digo
+Modalidade - Cï¿½digo
+Elemento - Cï¿½digo
+Elemento Item - Cï¿½digo
+Item - Cï¿½digo
+Crï¿½dito Adicional - Cï¿½digo
 IAG
 IPU
 ];
@@ -120,16 +120,19 @@ IPU
 LOAD * INLINE [
 %_restosapagar
 Ano Origem - Restos a Pagar
-Valor Cancelado RPNP
 Valor Cancelado RPP Demais
 Valor Inscrito RPP Folha
 Valor Cancelado RPP Folha
 Valor OLP RPP Folha
 Valor Pago RPP Folha
-Valor Pago RPNP
 Valor Inscrito RPP Demais
 Valor OLP RPP Demais
 Valor Pago RPP Demais
 Valor Saldo RPNP
+Valor Inscrito RPNP
+Valor Liquidado RPNP
+Valor Pago RPNP
+Valor Cancelado RPNP
+Valor OLP RPNP
 
 ];

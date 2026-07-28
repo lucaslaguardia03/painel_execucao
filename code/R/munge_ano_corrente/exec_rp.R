@@ -27,9 +27,3 @@ base[, tmp := NULL]
 #====================================================================
 # exportacao dos dados
 write.csv2(base, "data/exec_rp.csv", row.names = FALSE, na="", fileEncoding = "UTF-8")
-
-
-#`VL_OLP_RPNP`, `VL_PAGO_RPP_DEMAIS`, and `VL_CANCELADO_RPP_DEMAIS`
-
-
-

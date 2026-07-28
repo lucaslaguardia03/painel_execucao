@@ -24,5 +24,3 @@ base[, VL_CRED_AUT := NULL]
 #====================================================================
 # exportacao dos dados
 write.csv2(base, "data/exec_suplementacao.csv", row.names = FALSE, na="", fileEncoding = "UTF-8")
-
-#Remover UO_FIN_COD de extract_bases_aid?
