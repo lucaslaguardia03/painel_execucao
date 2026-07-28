@@ -1,68 +1,62 @@
-LOAD * INLINE [
+﻿LOAD * INLINE [
 %_geral
 Ano
-M�s
-UO - C�digo
+Mês
+UO - Código
 UO - Sigla
 UO - Poder
 UO - Setor
-Fonte - C�digo
-Fonte - Descri��o
+Fonte - Código
+Fonte - Descrição
 Fonte STN
-Categoria - C�digo
-
+Categoria - Código
 ];
-
-
 
 LOAD * INLINE [
 %_receita
 Valor LOA da Receita
-Valor Efetivo Ajustado 
-Receita - Classifica��o
-Receita - Descri��o
-
+Valor Efetivo Ajustado
+Receita - Classificação
+Receita - Descrição
 ];
-
 
 LOAD * INLINE [
 %_despesa
-UO Financeira - C�digo 
-UO Inativo - C�digo 
-UO Inativo - Sigla 
-Fun��o - C�digo
-Fun��o - Descri��o
-Subfun��o - C�digo
-Programa - C�digo
-Programa - Descri��o
-A��o - C�digo
-A��o - Descri��o
-Grupo - C�digo
-Grupo - Descri��o
-Modalidade - C�digo
-Modalidade - Descri��o
-Elemento - C�digo
-Elemento - Descri��o
-Elemento Item - C�digo
-Elemento Item - Descri��o
-Item - C�digo
-IAG - C�digo
-IPU - C�digo
-IPU - Descri��o
-Cr�dito Adicional - C�digo
-Cr�dito Adicional - Descri��o
-Valor Cr�dito Inicial
-Valor Suplementa��o
+UO Financeira - Código
+UO Inativo - Código
+UO Inativo - Sigla
+Função - Código
+Função - Descrição
+Subfunção - Código
+Programa - Código
+Programa - Descrição
+Ação - Código
+Ação - Descrição
+Grupo - Código
+Grupo - Descrição
+Modalidade - Código
+Modalidade - Descrição
+Elemento - Código
+Elemento - Descrição
+Elemento Item - Código
+Elemento Item - Descrição
+Item - Código
+IAG - Código
+IPU - Código
+IPU - Descrição
+Crédito Adicional - Código
+Crédito Adicional - Descrição
+Valor Crédito Inicial
+Valor Suplementação
 Valor LOA da Despesa
-Valor Anula��o
+Valor Anulação
 Valor Empenhado
 Valor Liquidado
-Valor Pago Or�ament�rio
+Valor Pago Orçamentário
 Valor Pago Financeiro
-Valor Cr�dito Autorizado Total
+Valor Crédito Autorizado Total
 Valor LDO da Despesa
 ];
-
 
 LOAD * INLINE [
 %_orcamento_desp
@@ -70,7 +64,7 @@ Fiscal nv.1 - Despesa
 Fiscal nv.2 - Despesa
 Fiscal nv.3 - Despesa
 TETO RRF
-Despesa - Teto Prim�rio
+Despesa - Teto Primário
 Despesa - Teto PROPAG
 Evento - Folha de Pessoal
 ];
@@ -79,10 +73,9 @@ LOAD * INLINE [
 %_orcamento_rec
 SEF
 RCL
-RCL D�vida
+RCL Dívida
 RCL Pessoal
-Perda Fundeb 
-
+Perda Fundeb
 ];
 
 LOAD * INLINE [
@@ -91,28 +84,27 @@ ASPS
 FAPEMIG
 MDE
 PREV
-Obrigat�rio
-Transit�rio
-Prim�rio
+Obrigatório
+Transitório
+Primário
 ];
-
 
 LOAD * INLINE [
 %_despesa_filtros
 UO - Poder
-UO - C�digo
+UO - Código
 UO - Sigla
-Fun��o - C�digo
-Subfun��o - C�digo
-Fonte - C�digo
-Programa - C�digo
-A��o - C�digo
-Grupo - C�digo
-Modalidade - C�digo
-Elemento - C�digo
-Elemento Item - C�digo
-Item - C�digo
-Cr�dito Adicional - C�digo
+Função - Código
+Subfunção - Código
+Fonte - Código
+Programa - Código
+Ação - Código
+Grupo - Código
+Modalidade - Código
+Elemento - Código
+Elemento Item - Código
+Item - Código
+Crédito Adicional - Código
 IAG
 IPU
 ];
@@ -134,5 +126,4 @@ Valor Liquidado RPNP
 Valor Pago RPNP
 Valor Cancelado RPNP
 Valor OLP RPNP
-
 ];

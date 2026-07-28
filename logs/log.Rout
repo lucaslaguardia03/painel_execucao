@@ -1,0 +1,32 @@
+running
+  'C:\PROGRA~1\R\R-43~1.0\bin\x64\Rterm.exe --no-echo --no-restore --file=code/R/munge_ano_corrente/exec_suplementacao.R'
+
+Aviso: Algumas colunas não foram encontradas na base. Não foi possível realizar o agrupamento correto. Retornando a base sem alterações.
+Colunas ausentes: UO_FIN_COD
+Warning messages:
+1: In adiciona_desc(base, overwrite = TRUE) :
+  Os seguintes pares ANO-UO_COD nao foram classificados: 
+  2025-2481
+2: In adiciona_desc(base, overwrite = TRUE) :
+  Os seguintes pares ANO-ACAO_COD nao foram classificados: 
+  2025-1057, 2025-2100, 2025-4160, 2025-1043, 2025-4241, 2025-4408, 2025-2069, 2025-2034, 2025-1049, 2025-4411, 2025-1032, 2025-1056, 2025-2103, 2025-4406, 2025-4401, 2025-1008, 2025-1060, 2025-4402, 2025-2072, 2025-2013, 2025-4099, 2025-1055, 2025-4108, 2025-2084, 2025-4118, 2025-4124, 2025-2027, 2025-4112, 2025-1016, 2025-7020, 2025-2073, 2025-4418, 2025-2046, 2025-4027, 2025-2022, 2025-2104, 2025-2087, 2025-1059, 2025-2106
+3: In adiciona_desc(base, overwrite = TRUE) :
+  Os seguintes pares ANO-FONTE_COD nao foram classificados: 
+  2025-98, 2025-95, 2025-94, 2025-91, 2025-92, 2025-97, 2025-93
+4: In adiciona_desc(base, overwrite = TRUE) :
+  Os seguintes pares ANO-IPU_COD nao foram classificados: 
+  2024-0
+5: In adiciona_desc(base, overwrite = TRUE) :
+  Os seguintes pares ANO-ELEMENTO_COD nao foram classificados: 
+  2025-0
+6: In adiciona_desc(base, overwrite = TRUE) :
+  Os seguintes pares ANO-ELEMENTO_ITEM_COD nao foram classificados: 
+  2025-0
+Warning message:
+In set(x, j = name, value = value) :
+  Tentado atribuir NULL a coluna 'VL_CRED_AUT_TOTAL', mas essa coluna não existe para remover
+Warning message:
+In `[.data.table`(base, , `:=`(VL_CRED_AUT, NULL)) :
+  Tentado atribuir NULL a coluna 'VL_CRED_AUT', mas essa coluna não existe para remover
+'qv' n�o � reconhecido como um comando interno
+ou externo, um programa oper�vel ou um arquivo em lotes.
